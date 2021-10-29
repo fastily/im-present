@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Fastily",
     author_email="fastily@users.noreply.github.com",
-    description="Peridoically shake the mouse pointer to prove you're here",
+    description="Peridoically shake the mouse pointer to prove you're present",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/fastily/im-present",
