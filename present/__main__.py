@@ -59,8 +59,8 @@ def _main() -> None:
             log.info("Current position: %s", (new_curr := pyautogui.position()))
             if new_curr != curr:
                 curr = new_curr
-                log.info("Human mouse movement detected, sleeping for %ds...", args.i)
-                sleep(args.i)
+                log.info("Human mouse movement detected, sleeping for %ds...", args.i / 2)
+                sleep(args.i / 2)
                 continue
 
             max_x, max_y = pyautogui.size()
