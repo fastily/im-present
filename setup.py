@@ -16,8 +16,8 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/fastily/im-present/issues",
     },
     include_package_data=True,
-    packages=setuptools.find_packages(include=["present", "rich"]),
-    install_requires=['pyautogui'],
+    packages=setuptools.find_packages(include=["present"]),
+    install_requires=["pyautogui", "rich"],
     entry_points={
         'console_scripts': [
             'present = present.__main__:_main'
