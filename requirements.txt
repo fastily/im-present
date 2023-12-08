@@ -1,2 +1,2 @@
 PyAutoGUI==0.9.54
-rich==13.5.3
+rich==13.7.0
