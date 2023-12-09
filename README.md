@@ -21,3 +21,6 @@ optional arguments:
   -j secs     number of seconds to wait in between mouse jitters. Defaults to 0.5.
   -t secs     if set, exit after this many seconds have elapsed from the time this program was first started.
 ```
+Also installs a CLI alias called `present` which can be used to invoke the program directly
+
+👉 `im-present` can also determine if you're using your computer, in which case the mouse will not moved.
