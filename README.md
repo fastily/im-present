@@ -2,7 +2,7 @@
 [![Python 3.11+](https://upload.wikimedia.org/wikipedia/commons/6/62/Blue_Python_3.11%2B_Shield_Badge.svg)](https://www.python.org)
 [![License: GPL v3](https://upload.wikimedia.org/wikipedia/commons/8/86/GPL_v3_Blue_Badge.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Simple utility which moves your mouse by 1 pixel and then back, at a specified interval.  Useful for pretending to be at your computer and fooling the apps which track your productivity.
+Simple utility which moves your mouse by 1 pixel and then back at a specified interval.  Useful for pretending to be at your computer and fooling apps which track your productivity.
 
 ## Installation
 ```bash
@@ -21,6 +21,16 @@ optional arguments:
   -j secs     number of seconds to wait in between mouse jitters. Defaults to 0.5.
   -t secs     if set, exit after this many seconds have elapsed from the time this program was first started.
 ```
-Also installs a CLI alias called `present` which can be used to invoke the program directly
 
-👉 `im-present` can also determine if you're using your computer, in which case the mouse will not moved.
+## Run
+If installed with `pip`, you'll get a CLI alias, `present`, otherwise you'll have to invoke the program with `python3 -m present`
+
+```bash
+# Run indefinitely until quit (ctrl+c)
+present
+
+# Wiggle the mouse every 30s and wait 2s before moving it back to the original posotion
+present -i 30 -j 2
+```
+
+👉 `im-present` also checks if you're using your computer (i.e. did you manually move the mouse), in which case the mouse will not be moved until the next interval.
