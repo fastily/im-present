@@ -9,22 +9,9 @@ Simple utility which moves your mouse by 1 pixel and then back at a specified in
 pip install im-present
 ```
 
-## Usage
-```
-usage: __main__.py [-h] [-i secs] [-j secs] [-t secs]
-
-periodically shakes the mouse pointer to prove you're here
-
-optional arguments:
-  -h, --help  show this help message and exit
-  -i secs     number of seconds to wait in between mouse movements. Defaults to 600.
-  -j secs     number of seconds to wait in between mouse jitters. Defaults to 0.5.
-  -t secs     if set, exit after this many seconds have elapsed from the time this program was first started.
-```
+👉 Installs a CLI alias called `present` which can be used to invoke the program directly
 
 ## Run
-If installed with `pip`, you'll get a CLI alias, `present`, otherwise you'll have to invoke the program with `python3 -m present`
-
 ```bash
 # Run indefinitely until quit (ctrl+c)
 present
@@ -34,3 +21,16 @@ present -i 30 -j 2
 ```
 
 👉 `im-present` also checks if you're using your computer (i.e. did you manually move the mouse), in which case the mouse will not be moved until the next interval.
+
+## Usage
+```
+usage: present [-h] [-i secs] [-j secs] [-t secs]
+
+periodically shakes the mouse pointer to prove you're here
+
+options:
+  -h, --help  show this help message and exit
+  -i secs     number of seconds to wait in between mouse movements. Defaults to 600.
+  -j secs     number of seconds to wait in between mouse jitters. Defaults to 0.5.
+  -t secs     if set, exit after this many seconds have elapsed from the time this program was first started.
+```
